@@ -1,9 +1,11 @@
+from sklearn.experimental import enable_iterative_imputer
+from sklearn.impute import IterativeImpute
+
 import streamlit as st
 import pandas as pd 
 import numpy as np
-from sklearn.experimental import enable_iterative_imputer 
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.impute import SimpleImputer,KNNImputer,IterativeImputer
+from sklearn.impute import SimpleImputer,KNNImputer
 from sklearn.preprocessing import OneHotEncoder,LabelEncoder,OrdinalEncoder
 from sklearn.preprocessing import StandardScaler,MinMaxScaler,Normalizer
 from sklearn.model_selection import train_test_split
