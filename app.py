@@ -1,5 +1,4 @@
-from sklearn.experimental import enable_iterative_imputer
-from sklearn.impute import IterativeImpute
+
 
 import streamlit as st
 import pandas as pd 
@@ -12,7 +11,7 @@ from sklearn.model_selection import train_test_split
 import joblib
 
 
-model=joblib.load("model2")
+model=joblib.load("model_re")
 
 title=st.title("hous price predicsion in tehran")
 
@@ -63,12 +62,6 @@ lat=st.number_input("Enter your lat of hous")
 long=st.number_input("Enter your long of hous")
 
 
-
-
-
-
-# itre_ipute=IterativeImputer()
-# df=itre_ipute.fit_transform(df)
 
 coloums=["mantage","metrage","sal","otsg","tabage","vshed_status","lat","long","tehdad_vahed","asansor","parking","anbari"]
 
